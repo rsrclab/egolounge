@@ -1,0 +1,27 @@
+{
+  "presets": ["next/babel", ["@babel/preset-env", { "modules": false }]],
+  "plugins": [
+    ["@babel/plugin-transform-runtime"],
+    ["styled-components", { "ssr": true }],
+    [
+      "module-resolver",
+      {
+        "alias": {
+          "~/collections": "./src/collections",
+          "~/components": "./src/components",
+          "~/styles": "./src/styles",
+          "~/types": "./src/types",
+          "~/pages": "./src/pages",
+          "~/assets": "./src/assets",
+          "~/utils": "./src/utils",
+          "~/lib": "./src/lib",
+          "~/data": "./src/data",
+          "~/sections": "./src/sections",
+          "~/hooks": "./src/hooks",
+          "~/context": "./src/context",
+          "~/server": "./src/server"
+        }
+      }
+    ]
+  ]
+}

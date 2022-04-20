@@ -1,0 +1,60 @@
+{
+  "compilerOptions": {
+    // "target": "ES2017",
+    "lib": [ "dom",
+      "es2017"],
+    "allowJs": false,
+    "paths": {
+      "~/assets": ["./src/assets"],
+      "~/types": ["./src/types"],
+      "~/components": ["./src/components"],
+      "~/collections": ["./src/collections"],
+      "~/data": ["./src/data"],
+      "~/lib": ["./src/lib"],
+      "~/sections": ["./src/sections"],
+      "~/styles": ["./src/styles"],
+      "~/utils": ["./src/utils"],
+      "~/context": ["./src/context"],
+      "~/server": ["./src/server"],
+      "~/hooks": ["./src/hooks"]
+    },
+    "skipLibCheck": true,
+    "strict": true,
+    "forceConsistentCasingInFileNames": true,
+    "noEmit": true,
+    "esModuleInterop": true, 
+    "moduleResolution": "node",
+    "resolveJsonModule": true,
+    "isolatedModules": true, 
+    "incremental": true,
+    "noImplicitThis": true,
+    "noImplicitReturns": true,
+    "noUnusedLocals": false,
+    "noUnusedParameters": false,
+    "noImplicitAny": false,
+    "target": "esnext",
+    "module": "esnext",
+    "jsx": "preserve",
+    "baseUrl": ".", 
+    "allowSyntheticDefaultImports": true, 
+    "removeComments": false,
+    "preserveConstEnums": true,
+    "sourceMap": true, 
+  },
+  "include": [
+    "styled.d.ts",
+    "global.d.ts",
+    "next-env.d.ts",
+    "**/*.ts",
+    "**/*.tsx",
+    "next.config.js"
+  ],
+  "exclude": [
+    "dist",
+    ".next",
+    "out",
+    "next.config.js",
+    "node_modules"
+  ]
+}
+
